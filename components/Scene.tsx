@@ -74,10 +74,10 @@ function Candle({ spec }: { spec: CandleSpec }) {
 
   useFrame((state) => {
     const t = state.clock.elapsedTime;
-    // Twin-frequency flicker — feels organic, not periodic
-    const f1 = Math.sin(t * 7.3 + spec.basePhase) * 0.6;
-    const f2 = Math.sin(t * 13.1 + spec.basePhase * 2.0) * 0.4;
-    const flicker = 0.82 + (f1 + f2) * 0.12;
+    // Twin-frequency flicker — slow, breathing rather than jittering
+    const f1 = Math.sin(t * 1.8 + spec.basePhase) * 0.6;
+    const f2 = Math.sin(t * 3.1 + spec.basePhase * 2.0) * 0.4;
+    const flicker = 0.86 + (f1 + f2) * 0.09;
     if (matRef.current) {
       matRef.current.uniforms.uIntensity.value = flicker;
       matRef.current.uniforms.uColor.value = baseColor;

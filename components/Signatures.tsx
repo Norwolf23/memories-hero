@@ -1,27 +1,27 @@
 const SIGNATURES = [
   {
-    name: "John Dory",
+    name: "Curried Crab Tart",
     detail:
-      "Pan-roasted, brown butter and capers, with whatever greens the morning brings.",
-    note: "Caught off the quay",
+      "Sri Lankan spiced, leek and ginger. The starter people quietly write home about.",
+    note: "Locally caught",
   },
   {
-    name: "Belly Pork",
+    name: "Pork Belly, Toad-in-the-Hole",
     detail:
-      "Slow-rendered crackling, Bramley apple, mustard. The dish guests come back for.",
+      "Slow-roasted local belly, crackling shard, roasting juices. Brett's signature.",
     note: "Outdoor-reared, Devon",
   },
   {
-    name: "Smoked Haddock Tart",
+    name: "Cannon of Local Venison",
     detail:
-      "House-smoked, leek cream, chive oil. Brett's quiet, exact starter.",
-    note: "Smoked in the kitchen",
+      "Pan-seared, with a pulled beef-brisket and red-onion croquette, red wine jus.",
+    note: "On the menu most weeks",
   },
   {
-    name: "Sticky Toffee Pudding",
+    name: "Sticky Toffee & Ginger Sponge",
     detail:
-      "The one nobody skips. Dark muscovado, clotted cream, salted toffee.",
-    note: "Made every morning",
+      "Steamed pudding, butterscotch sauce. The one nobody skips.",
+    note: "Made every service",
   },
 ];
 
