@@ -27,9 +27,10 @@ export default function Story() {
         </div>
         <div className="story__plate">
           <Plate
+            src="/images/pass.jpg"
+            alt="Hands plating the next course at a candlelit table"
             caption="The pass · Brett at work"
-            aspect="4/5"
-            variant="amber"
+            aspect="3/4"
           />
         </div>
       </div>
