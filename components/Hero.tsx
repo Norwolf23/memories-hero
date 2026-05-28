@@ -71,8 +71,8 @@ export default function Hero() {
           inset: 0;
           z-index: 1;
           background:
-            radial-gradient(ellipse at center, transparent 30%, rgba(14,11,8,0.55) 100%),
-            linear-gradient(to bottom, rgba(14,11,8,0.55), transparent 22%, transparent 70%, rgba(14,11,8,0.85));
+            radial-gradient(ellipse at center, transparent 35%, rgba(26,19,13,0.42) 100%),
+            linear-gradient(to bottom, rgba(26,19,13,0.40), transparent 25%, transparent 75%, rgba(26,19,13,0.70));
           pointer-events: none;
         }
         .hero__content {
