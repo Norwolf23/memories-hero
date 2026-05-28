@@ -1,12 +1,20 @@
 :root {
-  --bg: #0E0B08;
-  --surface: #161210;
-  --surface-2: #221C17;
+  /* Dark / room palette — warmed up: deep cocoa rather than near-black */
+  --bg: #1A130D;
+  --surface: #241A12;
+  --surface-2: #2F2319;
   --accent: #D7A968;
-  --accent-2: #B4742E;
+  --accent-2: #C0823D;
   --text: #F4ECDF;
-  --muted: #8A7E6C;
+  --muted: #9C8E78;
   --danger: #B85A4A;
+
+  /* Cream / linen palette — warm "menu card" panels that break up the dark */
+  --cream: #F4ECDA;
+  --cream-2: #E8DCC2;
+  --cream-3: #DDCDA8;
+  --ink: #2A1F14;
+  --ink-muted: #6F5D44;
 
   --max-width: 1180px;
   --gutter: clamp(20px, 4vw, 56px);
@@ -119,6 +127,14 @@ select {
   margin: 0;
 }
 
+/* Cream sections — warm "menu card" panels */
+.cream-section {
+  background: var(--cream);
+  color: var(--ink);
+}
+.cream-section .smallcaps { color: var(--ink-muted); }
+.cream-section .eyebrow { color: var(--accent-2); }
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -145,13 +161,20 @@ select {
 .btn-solid {
   background: var(--accent);
   color: var(--bg);
+  border-color: var(--accent);
 }
 
 .btn-solid:hover {
   background: var(--accent-2);
   border-color: var(--accent-2);
-  color: var(--bg);
+  color: var(--cream);
 }
+
+/* Button variant for cream sections */
+.cream-section .btn { border-color: var(--accent-2); color: var(--accent-2); }
+.cream-section .btn:hover { background: var(--accent-2); color: var(--cream); }
+.cream-section .btn-solid { background: var(--accent-2); color: var(--cream); border-color: var(--accent-2); }
+.cream-section .btn-solid:hover { background: var(--ink); border-color: var(--ink); color: var(--cream); }
 
 @media (prefers-reduced-motion: reduce) {
   *,
